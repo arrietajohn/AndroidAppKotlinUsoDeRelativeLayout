@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <TextView
+        android:id="@+id/primero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[I] Arriba a la izquierda por defecto"
+        android:textColor="#EA0F0F" />
+    <TextView
+        android:id="@+id/segundo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="[II] Abajo de (I)"
+    android:layout_below="@id/primero"
+    android:textColorHighlight="#010E01"/>
+    <TextView
+        android:id="@+id/tercero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[III] Abajo y a la derecha de (I)"
+        android:layout_below="@id/primero"
+        android:layout_toRightOf="@id/primero"
+        android:textColor="#3F51B5"  />
+    <TextView
+        android:id="@+id/cuarto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[IV] Arriba (V), borde izquierdo alineado con el borde izquierdo (II)"
+        android:layout_above="@+id/quinto"
+        android:layout_alignLeft ="@id/segundo"
+        android:textColor="#9415AA"/>
+    <TextView
+        android:id="@+id/quinto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[V] Abajo a la izquierda"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#FF9800" />
+</RelativeLayout>
+
